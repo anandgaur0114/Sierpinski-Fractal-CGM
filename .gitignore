@@ -1,0 +1,18 @@
+# Binaries and Build Artifacts
+*.exe
+*.o
+*.obj
+*.dll
+build/
+bin/
+
+# Large External Archives & Libraries
+SFML-2.5.1/
+imgui/
+imgui-sfml/
+*.zip
+
+# System Files
+.DS_Store
+Thumbs.db
+desktop.ini
