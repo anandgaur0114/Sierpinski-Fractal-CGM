@@ -491,9 +491,15 @@ sequenceDiagram
 - **Visual Description:** An upright equilateral triangle with the classic recursive central excised holes. Points accumulate densely within the three corner attractors.
 - **Color Palette:** 3-color IFS decomposition (Coral Red for Top $V_0$, Emerald Green for Bottom-Left $V_1$, Sky Blue for Bottom-Right $V_2$).
 
+![Sierpinski Triangle N=3 Output](screenshots/sierpinski_triangle_n3.png)
+*Figure 8.1: Real-Time Sierpinski Triangle (N=3, r=0.500) generated with 100,000 points and IFS 3-Vertex Color Palette at 58.8 FPS.*
+
 ### 8.2 Sierpinski Carpet ($N=4$) Output
 - **Algorithm:** Chaos Game on 4 square vertices ($r = 0.5$) with **non-adjacent vertex restriction rule**.
 - **Visual Description:** A square fractal containing a large central empty square surrounded by 8 self-similar sub-squares, with smaller nested square cutouts extending to the pixel level.
+
+![Sierpinski Carpet N=4 Output](screenshots/sierpinski_carpet_n4.png)
+*Figure 8.2: Real-Time Sierpinski Carpet (N=4, r=0.500) generated under Non-Adjacent Vertex Restriction Rule at 59.2 FPS.*
 
 ### 8.3 Dürer's Pentagasket ($N=5$) Output
 - **Algorithm:** Regular 5-gon with Golden Ratio contraction $r = \frac{3-\sqrt{5}}{2} \approx 0.382$.

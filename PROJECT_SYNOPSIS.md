@@ -144,35 +144,13 @@ The project successfully bridges theoretical mathematics and modern computer gra
 
 ---
 
-### System Architecture Reference
+### System Visual Outputs (From Software Execution)
+<div align="center">
+  <img src="screenshots/sierpinski_triangle_n3.png" width="48%" alt="Sierpinski Triangle N=3" />
+  <img src="screenshots/sierpinski_carpet_n4.png" width="48%" alt="Sierpinski Carpet N=4" />
+</div>
 
-```
- +---------------------------------------------------------------+
- |                        USER INPUT LAYER                       |
- |  Mouse Dragging  |  Click-to-Seed  |  GUI Buttons  |  Console |
- +-------------------------------+-------------------------------+
-                                 |
-                                 v
- +---------------------------------------------------------------+
- |                  GEOMETRY & IFS MATH ENGINE                   |
- |  Parametric N-Gon Vertices  |  Optimal Ratio r(N) Calculation  |
- |  Banach Fixed-Point Mapping |  No-Repeat / Restriction Logic   |
- +-------------------------------+-------------------------------+
-                                 |
-                                 v
- +---------------------------------------------------------------+
- |                   SFML RENDER PIPELINE                        |
- |  Incremental Batching  ->  sf::RenderTexture (GPU Cached)      |
- |  Vertex Halos & HUD    ->  Single Draw Call to sf::RenderWindow|
- +-------------------------------+-------------------------------+
-                                 |
-                                 v
- +---------------------------------------------------------------+
- |                 REAL-TIME DISPLAY (60 FPS)                    |
- |     Sierpinski Gasket (N=3)  |  Dürer Pentagasket (N=5)       |
- |     Sierpinski Carpet (N=4)  |  Hexaflake (N=6)               |
- +---------------------------------------------------------------+
-```
+*Figure: Real-time simulation outputs. Left: Sierpinski Triangle ($N=3$, $r=0.500$) with 100,000 points. Right: Sierpinski Carpet ($N=4$, $r=0.500$) with non-adjacent restriction rule at 60 FPS.*
 
 <div style="page-break-after: always;"></div>
 
